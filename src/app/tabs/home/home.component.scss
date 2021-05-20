@@ -1,0 +1,54 @@
+.body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+}
+
+.container .section {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.container .section:nth-child(1) {
+    background: url('../../../assets/images/backgrounds/ai-petri-low-clouds.jpg');
+    background-size: cover;
+}
+
+.container .section:nth-child(2) {
+    background: url('../../../assets/images/backgrounds/look-like-farcry-newdawn.jpg');
+    background-size: cover;
+}
+.container .section:nth-child(3) {
+    background: url('../../../assets/images/backgrounds/blue-green-water.jpg');
+    background-size: cover;
+}
+.container .section:nth-child(4) {
+    background: url('../../../assets/images/backgrounds/blue-water-cave.jpg');
+    background-size: cover;
+}
+.container .section:nth-child(5) {
+    background: url('../../../assets/images/backgrounds/a-nice-pit.jpg');
+    background-size: cover;
+}
+
+.container .section .slogan-container {
+    background: white;
+    opacity: 0.5;
+    max-width: 700px; //900px
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.01);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 40px;
+    padding-left: 90px;
+    font-family: controlFont;
+}
