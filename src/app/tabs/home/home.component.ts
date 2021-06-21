@@ -11,6 +11,7 @@ import $ from 'jquery';
 export class HomeComponent implements OnInit {
 
   dailySlogan: Slogan = new Slogan();
+  logoHomeButton: string = '../../../assets/images/logos/KEU_Logo_FullColor_Secondary_resize.png';
 
   constructor(private sloganSevice: SloganService) { }
 

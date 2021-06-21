@@ -14,19 +14,37 @@ header {
     box-sizing: border-box;
     border-radius: 4px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-brand{
+    height: 50px;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    margin: 0 1rem 0 0.5rem;
+}
+
+.logo-home-button{
+    width: 70px;
+    transform: translateY(5px);
 }
 
 .logo-container {
     height: 50px;
     width: 50px;
-    background: #bbb;
+}
+
+.img-container{
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
 }
 
 .logo {
     color: #069370;
-    height: 100%;
-    width: 100%;
-    // font-size: 36px;
     line-height: 60px;
     padding: 0 20px;
     text-align: center;
@@ -34,6 +52,7 @@ header {
     float: left;
     font-weight: 700;
     text-decoration: none;
+    height: 120px;
 }
 
 nav {
