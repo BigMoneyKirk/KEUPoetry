@@ -17,12 +17,12 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
     this.generateDailySlogan();
-    $(document).ready(function() {
-      $('.menu-toggle').click(function(){
+    $(document).ready(function () {
+      $('.menu-toggle').click(function () {
         $('.menu-toggle').toggleClass('active')
         $('nav').toggleClass('active')
       })
-    })
+    });
   }
 
   generateDailySlogan() {
