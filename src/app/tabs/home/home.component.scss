@@ -1,4 +1,4 @@
-
+$navbar-height: 118.667px;
 
 .body {
     margin: 0;
@@ -157,7 +157,7 @@ nav ul li a:hover {
 }
 
 .container .section:nth-child(1) {
-    padding-top: 118.667px;
+    padding-top: $navbar-height;
     background: url('../../../assets/images/backgrounds/ai-petri-low-clouds.jpg');
     background-size: cover;
 }
@@ -192,4 +192,13 @@ nav ul li a:hover {
     padding: 40px;
     padding-left: 90px;
     font-family: controlFont;
+}
+
+.slogan-flex-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transform: translateY(-118.667px);
 }
