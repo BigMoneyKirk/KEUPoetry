@@ -178,6 +178,10 @@ nav ul li a:hover {
     background: url('../../../assets/images/backgrounds/a-nice-pit.jpg');
     background-size: cover;
 }
+.container .section:nth-child(6) {
+    background: url('../../../assets/images/backgrounds/stary-night-tree.jpg');
+    background-size: cover;
+}
 
 .container .section .slogan-container {
     background: white;
@@ -200,5 +204,5 @@ nav ul li a:hover {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    transform: translateY(-118.667px);
+    transform: translateY(-$navbar-height);
 }
