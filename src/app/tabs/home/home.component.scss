@@ -1,6 +1,10 @@
 $navbar-height: 118.667px;
 $light-blue: #2bd2ff;
 
+html {
+    scroll-behavior: smooth;
+}
+
 .body {
     margin: 0;
     padding: 0;
@@ -206,6 +210,7 @@ nav ul li a:hover {
     align-items: center;
     height: 100vh;
     transform: translateY(-$navbar-height);
+    flex-direction: column;
 }
 
 .donate-btn-container .btn {
@@ -308,4 +313,17 @@ nav ul li a:hover {
         0 0 15px #ff1f71,
         0 0 30px #ff1f71,
         0 0 60px #ff1f71;
+}
+
+.logo-container {
+    position: relative;
+    display: flex;
+    margin-bottom: 100px;
+    width: 500px;
+    justify-content: center;
+    align-items: center;
+}
+
+.watermark-logo {
+    height: 70px;
 }

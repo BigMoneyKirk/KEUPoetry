@@ -12,6 +12,7 @@ export class HomeComponent implements OnInit {
 
   dailySlogan: Slogan = new Slogan();
   logoHomeButton: string = '../../../assets/images/logos/KEU_Logo_FullColor_Secondary_resize.png';
+  watermarkLogo: string = '../../../assets/images/logos/KEU_Logo_FullColor_Wordmark.png';
 
   constructor(private sloganSevice: SloganService) { }
 
