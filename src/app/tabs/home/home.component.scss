@@ -154,7 +154,7 @@ nav ul li a:hover {
 }
 
 .container .section {
-    position: sticky;
+    //position: sticky;
     top: 0;
     left: 0;
     width: 100%;
@@ -170,6 +170,7 @@ nav ul li a:hover {
 .container .section:nth-child(2) {
     background: url('../../../assets/images/backgrounds/look-like-farcry-newdawn.jpg');
     background-size: cover;
+    padding-top: 0;
 }
 .container .section:nth-child(3) {
     background: url('../../../assets/images/backgrounds/blue-green-water.jpg');
@@ -206,11 +207,18 @@ nav ul li a:hover {
 .slogan-flex-container {
     display: flex;
     width: 100%;
-    justify-content: center;
+    //justify-content: center;
     align-items: center;
     height: 100vh;
-    transform: translateY(-$navbar-height);
+    // transform: translateY(-$navbar-height);
     flex-direction: column;
+}
+
+.donate-btn-container {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
 }
 
 .donate-btn-container .btn {
@@ -322,6 +330,8 @@ nav ul li a:hover {
     width: 500px;
     justify-content: center;
     align-items: center;
+    margin-top: 70px;
+    flex-direction: column;
 }
 
 .watermark-logo {

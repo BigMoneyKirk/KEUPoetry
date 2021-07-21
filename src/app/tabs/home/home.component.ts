@@ -13,6 +13,7 @@ export class HomeComponent implements OnInit {
   dailySlogan: Slogan = new Slogan();
   logoHomeButton: string = '../../../assets/images/logos/KEU_Logo_FullColor_Secondary_resize.png';
   watermarkLogo: string = '../../../assets/images/logos/KEU_Logo_FullColor_Wordmark.png';
+  pswLogo: string = '../../../assets/images/logos/psw_logo.png'; //https://www.coolgenerator.com/png-text-generator
 
   constructor(private sloganSevice: SloganService) { }
 
@@ -29,5 +30,29 @@ export class HomeComponent implements OnInit {
   generateDailySlogan() {
     let allSlogans = this.sloganSevice.getAllSlogans();
     this.dailySlogan = allSlogans[Math.floor(Math.random() * allSlogans.length)];
+  }
+
+  toHome() {
+    document.getElementById("home-link").scrollIntoView({behavior:"smooth"});
+  }
+
+  toDonations() {
+    document.getElementById("donation-link").scrollIntoView({behavior:"smooth"});
+  }
+
+  toBookings() {
+    document.getElementById("bookings-link").scrollIntoView({behavior:"smooth"});
+  }
+
+  toEvents() {
+    document.getElementById("events-link").scrollIntoView({behavior:"smooth"});
+  }
+
+  toUpdates() {
+    document.getElementById("updates-link").scrollIntoView({behavior:"smooth"});
+  }
+
+  toAbout() {
+    document.getElementById("about-link").scrollIntoView({behavior:"smooth"});
   }
 }
