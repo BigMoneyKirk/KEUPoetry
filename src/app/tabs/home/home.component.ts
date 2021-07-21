@@ -30,4 +30,28 @@ export class HomeComponent implements OnInit {
     let allSlogans = this.sloganSevice.getAllSlogans();
     this.dailySlogan = allSlogans[Math.floor(Math.random() * allSlogans.length)];
   }
+
+  toHome() {
+    document.getElementById("home-link").scrollIntoView({behavior:"smooth"});
+  }
+
+  toDonations() {
+    document.getElementById("donation-link").scrollIntoView({behavior:"smooth"});
+  }
+
+  toBookings() {
+    document.getElementById("bookings-link").scrollIntoView({behavior:"smooth"});
+  }
+
+  toEvents() {
+    document.getElementById("events-link").scrollIntoView({behavior:"smooth"});
+  }
+
+  toUpdates() {
+    document.getElementById("updates-link").scrollIntoView({behavior:"smooth"});
+  }
+
+  toAbout() {
+    document.getElementById("about-link").scrollIntoView({behavior:"smooth"});
+  }
 }

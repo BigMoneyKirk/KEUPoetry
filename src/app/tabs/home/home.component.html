@@ -11,12 +11,12 @@
     <div class="menu-toggle"></div>
     <nav>
       <ul>
-        <li><a href="#home-link" class="active">Home</a></li>
-        <li><a href="home/#donation-link">Donations</a></li>
-        <li><a href="home/#bookings-link">Bookings</a></li>
-        <li><a href="home/#events-link">Events</a></li>
-        <li><a href="home/#updates-link">Updates</a></li>
-        <li><a href="home/#about-link">About</a></li>
+        <li><a (click)="toHome()"class="active">Home</a></li>
+        <li><a (click)="toDonations()">Donations</a></li>
+        <li><a (click)="toBookings()">Bookings</a></li>
+        <li><a (click)="toEvents()">Events</a></li>
+        <li><a (click)="toUpdates()">Updates</a></li>
+        <li><a (click)="toAbout()">About</a></li>
       </ul>
     </nav>
   </header>
@@ -35,7 +35,7 @@
       </div>
     </div>
     <div class="section" id="donation-link">
-      <div class="slogan-flex-container donate-btn-container">
+      <div class="donate-btn-container">
         <div class="btn"><a href="https://www.paypal.com/paypalme/kirklandenterprisesu" target="_blank">Donate</a></div>
       </div>
     </div>
