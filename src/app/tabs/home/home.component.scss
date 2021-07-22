@@ -159,18 +159,17 @@ nav ul li a:hover {
     left: 0;
     width: 100%;
     height: 100vh;
-    padding-top: $navbar-height;
 }
 
 .container .section:nth-child(1) {
     background: url('../../../assets/images/backgrounds/ai-petri-low-clouds.jpg');
     background-size: cover;
+    padding-top: $navbar-height;
 }
 
 .container .section:nth-child(2) {
     background: url('../../../assets/images/backgrounds/look-like-farcry-newdawn.jpg');
     background-size: cover;
-    padding-top: 0;
 }
 .container .section:nth-child(3) {
     background: url('../../../assets/images/backgrounds/blue-green-water.jpg');
@@ -336,4 +335,10 @@ nav ul li a:hover {
 
 .watermark-logo {
     height: 70px;
+}
+
+keu-calendar {
+    display: flex;
+    justify-content: center;
+    height: 100%;
 }
