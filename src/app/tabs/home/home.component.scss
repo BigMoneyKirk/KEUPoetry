@@ -174,11 +174,8 @@ nav ul li a:hover {
 .container .section:nth-child(3) {
     background: url('../../../assets/images/backgrounds/blue-green-water.jpg');
     background-size: cover;
-    position: relative;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
+    overflow: hidden;
+    height: 200vh;
 }
 .container .section:nth-child(4) {
     background: url('../../../assets/images/backgrounds/blue-water-cave.jpg');
@@ -342,10 +339,20 @@ nav ul li a:hover {
     height: 70px;
 }
 
+.booking-calendar-container {
+    margin-top: 50px;
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+}
+
 keu-calendar {
     z-index: 1;
     height: 100%;
     width: 70%;
+    padding: 30px;
 }
 
 .faded-calendar-background {
@@ -361,4 +368,12 @@ keu-calendar {
     border-top: 1px solid rgba(255, 255, 255, 0.5);
     border-left: 1px solid rgba(255, 255, 255, 0.5);
     z-index: 0;
+}
+
+.bookings-logo-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    max-height: 100px;
+    margin-top: 50px;
 }

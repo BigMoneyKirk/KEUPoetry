@@ -11,7 +11,7 @@
     <div class="menu-toggle"></div>
     <nav>
       <ul>
-        <li><a (click)="toHome()"class="active">Home</a></li>
+        <li><a (click)="toHome()" class="active">Home</a></li>
         <li><a (click)="toDonations()">Donations</a></li>
         <li><a (click)="toBookings()">Bookings</a></li>
         <li><a (click)="toEvents()">Events</a></li>
@@ -41,9 +41,14 @@
       </div>
     </div>
     <div class="section" id="bookings-link">
-      <!-- <img [src]="roseBook" alt="Rose Book" class="roseBook"> -->
-      <keu-calendar></keu-calendar>      
-      <div class="faded-calendar-background"></div>
+      <div class="bookings-logo-container">
+        <img [src]="bookingsLogo" alt="Bookings Logo" class="bookingsLogo">
+      </div>
+      <div class="booking-calendar-container">
+        <!-- <img [src]="roseBook" alt="Rose Book" class="roseBook"> -->
+        <keu-calendar></keu-calendar>
+        <div class="faded-calendar-background"></div>
+      </div>
     </div>
     <div class="section" id="events-link"></div>
     <div class="section" id="updates-link"></div>
