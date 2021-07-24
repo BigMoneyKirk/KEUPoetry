@@ -18,6 +18,7 @@ export class HomeComponent implements OnInit {
   pswLogo: string = '../../../assets/images/logos/psw_logo.png'; //https://www.coolgenerator.com/png-text-generator
   roseBook: string = '../../../assets/images/misc/rose-book.png'; //https://www.pngwing.com/en/search?q=poetry
   bookingsLogo: string = '../../../assets/images/misc/Bookings2.png'; // https://maketext.io/
+  donationsLogo: string = '../../../assets/images/misc/Donations.png'; // https://maketext.io/
 
   public nav_items;
   public currentSelectedNavItemElement: number = 0;

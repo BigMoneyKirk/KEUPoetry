@@ -91,6 +91,7 @@ nav ul li a:hover {
     background: #069370;
     color: #fff;
     transition: 0.5s;
+    border-radius: 5px;
 }
 
 @media (max-width: 1200px) {
@@ -170,6 +171,7 @@ nav ul li a:hover {
 .container .section:nth-child(2) {
     background: url('../../../assets/images/backgrounds/look-like-farcry-newdawn.jpg');
     background-size: cover;
+    overflow: hidden;
 }
 .container .section:nth-child(3) {
     background: url('../../../assets/images/backgrounds/blue-green-water.jpg');
@@ -215,11 +217,14 @@ nav ul li a:hover {
     flex-direction: column;
 }
 
+.donations-logo-container {
+    margin-bottom: 150px;
+}
+
 .donate-btn-container {
     display: flex;
     justify-content: center;
     height: 100%;
-    align-items: center;
 }
 
 .donate-btn-container .btn {
@@ -360,8 +365,8 @@ keu-calendar {
     top: 0;
     width: 80%;
     height: 100%;
-    background: white;
-    opacity: 0.5;
+    backdrop-filter: blur(5px);
+    opacity: 0.7;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.01);
     border-radius: 20px;
     border: 1px solid rgba(255, 255, 255, 0.25);
@@ -370,7 +375,7 @@ keu-calendar {
     z-index: 0;
 }
 
-.bookings-logo-container {
+.section-logo-container {
     display: flex;
     width: 100%;
     justify-content: center;
