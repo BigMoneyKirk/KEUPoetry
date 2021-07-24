@@ -1,13 +1,5 @@
 export class NavItem {
-    constructor(name?: string, id?: string, _class?: string, dot_class?: string) {
-        this.name = name;
-        this.id = id;
-        this._class = _class;
-        this.dot_class = dot_class;
+    constructor(public name?: string, public id?: string, public _class?: string, public dot_class?: string) {
+        // https://kendaleiv.com/typescript-constructor-assignment-public-and-private-keywords/
     }
-
-    public name?: string;
-    public id?: string;
-    public _class?: string;
-    public dot_class?: string;
 }
