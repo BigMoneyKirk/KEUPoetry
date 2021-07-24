@@ -1,0 +1,51 @@
+<div class="body">
+
+    <!-- navbar -->
+    <header>
+      <a class="navbar-brand">
+        <span class="navbar-brand-text">
+          <img [src]="logoHomeButton" alt="KEU Logo Home Button" class="logo-home-button">
+        </span>
+      </a>
+  
+      <div class="menu-toggle"></div>
+      <nav>
+        <ul>
+          <li><a (click)="toSubPage('Home')" class="nav-item active" id="nav-home-link">Home</a></li>
+          <li><a (click)="toSubPage('Donations')" class="nav-item" id="nav-donations-link">Donations</a></li>
+          <li><a (click)="toSubPage('Bookings')" class="nav-item" id="nav-bookings-link">Bookings</a></li>
+          <li><a (click)="toSubPage('Events')" class="nav-item" id="nav-events-link">Events</a></li>
+          <li><a (click)="toSubPage('Updates')" class="nav-item" id="nav-updates-link">Updates</a></li>
+          <li><a (click)="toSubPage('About')" class="nav-item" id="nav-about-link">About</a></li>
+        </ul>
+      </nav>
+    </header>
+  
+    <!-- backgrounds/sections -->
+    <div class="container">
+        <keupoetry-home class="section home-section"></keupoetry-home>
+      <div class="section donations-section" id="donations-section">
+        <div class="donations-logo-container section-logo-container">
+          <img [src]="donationsLogo" alt="Donations Logo" class="donationsLogo">
+        </div>
+        <div class="donate-btn-container">
+          <div class="btn"><a href="https://www.paypal.com/paypalme/kirklandenterprisesu" target="_blank">Donate</a></div>
+        </div>
+      </div>
+      <div class="section bookings-section" id="bookings-section">
+        <div class="bookings-logo-container section-logo-container">
+          <img [src]="bookingsLogo" alt="Bookings Logo" class="bookingsLogo">
+        </div>
+        <div class="booking-calendar-container">
+          <!-- <img [src]="roseBook" alt="Rose Book" class="roseBook"> -->
+          <keu-calendar></keu-calendar>
+          <div class="faded-calendar-background"></div>
+        </div>
+      </div>
+      <div class="section events-section" id="events-section"></div>
+      <div class="section updates-section" id="updates-section"></div>
+      <div class="section about-section" id="about-section"></div>
+    </div>
+  </div>
+  
+  <!-- source: https://www.youtube.com/watch?v=yk57cgZLWRo -->
