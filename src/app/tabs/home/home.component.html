@@ -11,19 +11,19 @@
     <div class="menu-toggle"></div>
     <nav>
       <ul>
-        <li><a (click)="toHome()" class="nav-item active" id="nav-home-link">Home</a></li>
-        <li><a (click)="toDonations()" class="nav-item" id="nav-donations-link">Donations</a></li>
-        <li><a (click)="toBookings()" class="nav-item" id="nav-bookings-link">Bookings</a></li>
-        <li><a (click)="toEvents()" class="nav-item" id="nav-events-link">Events</a></li>
-        <li><a (click)="toUpdates()" class="nav-item" id="nav-updates-link">Updates</a></li>
-        <li><a (click)="toAbout()" class="nav-item" id="nav-about-link">About</a></li>
+        <li><a (click)="toSubPage('Home')" class="nav-item active" id="nav-home-link">Home</a></li>
+        <li><a (click)="toSubPage('Donations')" class="nav-item" id="nav-donations-link">Donations</a></li>
+        <li><a (click)="toSubPage('Bookings')" class="nav-item" id="nav-bookings-link">Bookings</a></li>
+        <li><a (click)="toSubPage('Events')" class="nav-item" id="nav-events-link">Events</a></li>
+        <li><a (click)="toSubPage('Updates')" class="nav-item" id="nav-updates-link">Updates</a></li>
+        <li><a (click)="toSubPage('About')" class="nav-item" id="nav-about-link">About</a></li>
       </ul>
     </nav>
   </header>
 
   <!-- backgrounds/sections -->
   <div class="container">
-    <div class="section slogan-flex-container home-section" id="home-link">
+    <div class="section slogan-flex-container home-section" id="home-section">
       <div class="logo-container">
         <img [src]="watermarkLogo" alt="KEU Watermark Logo" class="watermark-logo">
         <img [src]="pswLogo" alt="Poetry and Spoken Word Logo" class="pswLogo">
@@ -35,12 +35,12 @@
         </div>
       </div>
     </div>
-    <div class="section donations-section" id="donation-link">
+    <div class="section donations-section" id="donations-section">
       <div class="donate-btn-container">
         <div class="btn"><a href="https://www.paypal.com/paypalme/kirklandenterprisesu" target="_blank">Donate</a></div>
       </div>
     </div>
-    <div class="section bookings-section" id="bookings-link">
+    <div class="section bookings-section" id="bookings-section">
       <div class="bookings-logo-container">
         <img [src]="bookingsLogo" alt="Bookings Logo" class="bookingsLogo">
       </div>
@@ -50,9 +50,9 @@
         <div class="faded-calendar-background"></div>
       </div>
     </div>
-    <div class="section events-section" id="events-link"></div>
-    <div class="section updates-section" id="updates-link"></div>
-    <div class="section about-section" id="about-link"></div>
+    <div class="section events-section" id="events-section"></div>
+    <div class="section updates-section" id="updates-section"></div>
+    <div class="section about-section" id="about-section"></div>
   </div>
 </div>
 

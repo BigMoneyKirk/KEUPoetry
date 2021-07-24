@@ -54,28 +54,9 @@ export class HomeComponent implements OnInit {
     });
   }
 
-  toHome() {
-    document.getElementById("home-link").scrollIntoView({ behavior: "smooth" });
-  }
-
-  toDonations() {
-    document.getElementById("donation-link").scrollIntoView({ behavior: "smooth" });
-  }
-
-  toBookings() {
-    document.getElementById("bookings-link").scrollIntoView({ behavior: "smooth" });
-  }
-
-  toEvents() {
-    document.getElementById("events-link").scrollIntoView({ behavior: "smooth" });
-  }
-
-  toUpdates() {
-    document.getElementById("updates-link").scrollIntoView({ behavior: "smooth" });
-  }
-
-  toAbout() {
-    document.getElementById("about-link").scrollIntoView({ behavior: "smooth" });
+  toSubPage(name: string) {
+    let navClass: string = this.navItems.find(navItem => navItem.name == name)._class;
+    document.getElementById(navClass).scrollIntoView({ behavior: "smooth" });
   }
 
   changeSelectedNavItem() {
