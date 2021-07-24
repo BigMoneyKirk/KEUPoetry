@@ -8,7 +8,9 @@ import { CalendarComponent } from './components/calendar/calendar.component';
 import { FullCalendarModule } from '@fullcalendar/angular'; // must go before plugins
 import dayGridPlugin from '@fullcalendar/daygrid'; // a plugin!
 import interactionPlugin from '@fullcalendar/interaction';
-import { MainComponent } from './components/main/main.component'; // a plugin!
+import { MainComponent } from './components/main/main.component';
+import { DonationsComponent } from './tabs/donations/donations.component';
+import { BookingsComponent } from './tabs/bookings/bookings.component'; // a plugin!
 
 FullCalendarModule.registerPlugins([ // register FullCalendar plugins
   dayGridPlugin,
@@ -20,7 +22,9 @@ FullCalendarModule.registerPlugins([ // register FullCalendar plugins
     AppComponent,
     HomeComponent,
     CalendarComponent,
-    MainComponent
+    MainComponent,
+    DonationsComponent,
+    BookingsComponent
   ],
   imports: [
     BrowserModule,

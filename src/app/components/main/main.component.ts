@@ -16,7 +16,7 @@ export class MainComponent implements OnInit {
   watermarkLogo: string = '../../../assets/images/logos/KEU_Logo_FullColor_Wordmark.png';
   pswLogo: string = '../../../assets/images/logos/psw_logo.png'; //https://www.coolgenerator.com/png-text-generator
   roseBook: string = '../../../assets/images/misc/rose-book.png'; //https://www.pngwing.com/en/search?q=poetry
-  bookingsLogo: string = '../../../assets/images/misc/Bookings2.png'; // https://maketext.io/
+  
   donationsLogo: string = '../../../assets/images/misc/Donations.png'; // https://maketext.io/
 
   public nav_items;
