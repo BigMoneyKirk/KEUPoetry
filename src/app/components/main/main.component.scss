@@ -52,7 +52,7 @@ header {
 }
 
 .logo {
-    color: #069370;
+    color: teal;
     line-height: 60px;
     padding: 0 20px;
     text-align: center;
@@ -88,7 +88,7 @@ nav ul li a {
 
 nav ul li a.active,
 nav ul li a:hover {
-    background: #069370;
+    background: teal;
     color: #fff;
     transition: 0.5s;
     border-radius: 5px;
@@ -145,10 +145,6 @@ nav ul li a:hover {
     }
 }
 
-.content {
-    padding: 16px;
-}
-
 .container {
     position: relative;
     width: 100%;
@@ -166,29 +162,3 @@ nav ul li a:hover {
     background: url('../../../assets/images/backgrounds/stary-night-tree.jpg');
     background-size: cover;
 }
-
-.slogan-flex-container {
-    display: flex;
-    width: 100%;
-    //justify-content: center;
-    align-items: center;
-    height: 100vh;
-    // transform: translateY(-$navbar-height);
-    flex-direction: column;
-}
-
-.logo-container {
-    position: relative;
-    display: flex;
-    margin-bottom: 100px;
-    width: 500px;
-    justify-content: center;
-    align-items: center;
-    margin-top: 70px;
-    flex-direction: column;
-}
-
-.watermark-logo {
-    height: 70px;
-}
-
