@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Slogan } from 'src/app/classes/slogan';
-import { SloganService } from 'src/app/services/slogan.service';
 import $ from 'jquery';
 import inView from 'node_modules/in-view/dist/in-view.min.js'; //https://github.com/camwiegert/in-view
 import { NavItem } from 'src/app/interfaces/nav-items';
@@ -11,16 +9,9 @@ import { NavItem } from 'src/app/interfaces/nav-items';
   styleUrls: ['./main.component.scss']
 })
 export class MainComponent implements OnInit {
-  dailySlogan: Slogan = new Slogan();
   logoHomeButton: string = '../../../assets/images/logos/KEU_Logo_FullColor_Secondary_resize.png';
-  watermarkLogo: string = '../../../assets/images/logos/KEU_Logo_FullColor_Wordmark.png';
-  pswLogo: string = '../../../assets/images/logos/psw_logo.png'; //https://www.coolgenerator.com/png-text-generator
-  roseBook: string = '../../../assets/images/misc/rose-book.png'; //https://www.pngwing.com/en/search?q=poetry
   
-  donationsLogo: string = '../../../assets/images/misc/Donations.png'; // https://maketext.io/
-
   public nav_items;
-  public currentSelectedNavItemElement: number = 0;
 
   home: NavItem = new NavItem('Home', 'nav-home-link', 'home-section', '.home-section');
   donations: NavItem = new NavItem('Donations', 'nav-donations-link', 'donations-section', '.donations-section');
@@ -30,19 +21,13 @@ export class MainComponent implements OnInit {
   about: NavItem = new NavItem('About', 'nav-about-link', 'about-section', '.about-section');
   navItems: NavItem[] = [this.home, this.donations, this.bookings, this.events, this.updates, this.about];
 
-  constructor(private sloganSevice: SloganService) { }
+  constructor() { }
 
   ngOnInit() {
     this.nav_items = document.querySelectorAll('.nav-item');
-    this.generateDailySlogan();
     this.burger_menu_toggle();
     this.changeSelectedNavItem();
     this.changeNavItemWhenInView();
-  }
-
-  generateDailySlogan() {
-    let allSlogans = this.sloganSevice.getAllSlogans();
-    this.dailySlogan = allSlogans[Math.floor(Math.random() * allSlogans.length)];
   }
 
   burger_menu_toggle() {
@@ -92,7 +77,4 @@ export class MainComponent implements OnInit {
       });
     });
   }
-
-  //https://fullcalendar.io/docs/getting-started
-  //https://medium.com/aubergine-solutions/how-to-integrate-jquery-fullcalendar-in-angular-c35728cfeeb2
 }

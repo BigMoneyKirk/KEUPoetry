@@ -18,3 +18,5 @@ export class CalendarComponent implements OnInit {
   };
 
 }
+
+//https://fullcalendar.io/docs/getting-started
