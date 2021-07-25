@@ -11,7 +11,9 @@ import interactionPlugin from '@fullcalendar/interaction';
 import { MainComponent } from './components/main/main.component';
 import { DonationsComponent } from './tabs/donations/donations.component';
 import { BookingsComponent } from './tabs/bookings/bookings.component';
-import { EventsComponent } from './tabs/events/events.component'; // a plugin!
+import { EventsComponent } from './tabs/events/events.component';
+import { UpdatesComponent } from './tabs/updates/updates.component';
+import { AboutComponent } from './tabs/about/about.component'; // a plugin!
 
 FullCalendarModule.registerPlugins([ // register FullCalendar plugins
   dayGridPlugin,
@@ -26,7 +28,9 @@ FullCalendarModule.registerPlugins([ // register FullCalendar plugins
     MainComponent,
     DonationsComponent,
     BookingsComponent,
-    EventsComponent
+    EventsComponent,
+    UpdatesComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

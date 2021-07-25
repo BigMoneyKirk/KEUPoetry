@@ -145,16 +145,7 @@ nav ul li a:hover {
     }
 }
 
-.container {
+.main-section-container {
     position: relative;
     width: 100%;
-}
-
-.container .section:nth-child(5) {
-    background: url('../../../assets/images/backgrounds/a-nice-pit.jpg');
-    background-size: cover;
-}
-.container .section:nth-child(6) {
-    background: url('../../../assets/images/backgrounds/stary-night-tree.jpg');
-    background-size: cover;
 }
