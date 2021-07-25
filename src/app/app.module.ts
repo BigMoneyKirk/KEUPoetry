@@ -10,7 +10,8 @@ import dayGridPlugin from '@fullcalendar/daygrid'; // a plugin!
 import interactionPlugin from '@fullcalendar/interaction';
 import { MainComponent } from './components/main/main.component';
 import { DonationsComponent } from './tabs/donations/donations.component';
-import { BookingsComponent } from './tabs/bookings/bookings.component'; // a plugin!
+import { BookingsComponent } from './tabs/bookings/bookings.component';
+import { EventsComponent } from './tabs/events/events.component'; // a plugin!
 
 FullCalendarModule.registerPlugins([ // register FullCalendar plugins
   dayGridPlugin,
@@ -24,7 +25,8 @@ FullCalendarModule.registerPlugins([ // register FullCalendar plugins
     CalendarComponent,
     MainComponent,
     DonationsComponent,
-    BookingsComponent
+    BookingsComponent,
+    EventsComponent
   ],
   imports: [
     BrowserModule,
