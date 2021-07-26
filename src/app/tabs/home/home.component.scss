@@ -4,6 +4,7 @@ $navbar-height: 118.667px;
     background: url('../../../assets/images/backgrounds/ai-petri-low-clouds.jpg');
     background-size: cover;
     padding-top: $navbar-height;
+    background-attachment: fixed;
 }
 
 .logo-container {

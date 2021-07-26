@@ -9,6 +9,8 @@ export class EventsComponent implements OnInit {
 
   constructor() { }
 
+  eventsLogo: string = '../../../assets/images/misc/Events.png'; // https://maketext.io/
+
   ngOnInit(): void {
   }
 

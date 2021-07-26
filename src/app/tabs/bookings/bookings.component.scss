@@ -2,7 +2,8 @@
     background: url('../../../assets/images/backgrounds/blue-green-water.jpg');
     background-size: cover;
     overflow: hidden;
-    height: 190vh;
+    height: 1100px !important;
+    background-attachment: fixed;
 }
 
 .bookings-calendar-container {

@@ -1,4 +1,19 @@
 .events-section {
     background: url('../../../assets/images/backgrounds/blue-water-cave.jpg');
     background-size: cover;
+    overflow: hidden;
+    height: 1000px !important;
+    background-attachment: fixed;
+}
+
+.events-two-by-two-row {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.event-container {
+    color: white;
+    width: 48%;
+    height: 580px;
+    border: solid;
 }
