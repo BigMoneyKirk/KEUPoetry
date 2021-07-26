@@ -3,7 +3,7 @@
     background-size: cover;
     overflow: hidden;
     height: 1000px !important;
-    background-attachment: fixed;
+    background-attachment: fixed; //https://www.w3schools.com/cssref/pr_background-attachment.asp
 }
 
 .events-two-by-two-row {
@@ -16,4 +16,19 @@
     width: 48%;
     height: 580px;
     border: solid;
+    backdrop-filter: blur(5px);
+    border-radius: 5px;
+    box-shadow: 2px 3.3px 5px darkgrey;
+    border-color: darkgray;
+    border-width: 0.01px;
+}
+
+.event-img-container {
+    width: 100%;
+    height: 100%;
+}
+
+#gray-coming-soon, #unattainable-love {
+    width: 100%;
+    height: 100%;
 }
