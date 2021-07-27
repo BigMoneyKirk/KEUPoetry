@@ -1,0 +1,35 @@
+<div class="body">
+
+    <!-- navbar -->
+    <header>
+        <a class="navbar-brand">
+            <span class="navbar-brand-text">
+                <img [src]="logoHomeButton" alt="KEU Logo Home Button" class="logo-home-button">
+            </span>
+        </a>
+
+        <div class="menu-toggle"></div>
+        <nav>
+            <ul>
+                <li><a (click)="toSubPage('Home')" class="nav-item active" id="nav-home-link">Home</a></li>
+                <li><a (click)="toSubPage('Donations')" class="nav-item" id="nav-donations-link">Donations</a></li>
+                <li><a (click)="toSubPage('Bookings')" class="nav-item" id="nav-bookings-link">Bookings</a></li>
+                <li><a (click)="toSubPage('Events')" class="nav-item" id="nav-events-link">Events</a></li>
+                <li><a (click)="toSubPage('Updates')" class="nav-item" id="nav-updates-link">Updates</a></li>
+                <li><a (click)="toSubPage('About')" class="nav-item" id="nav-about-link">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- backgrounds/sections -->
+    <div class="main-section-container">
+        <keupoetry-home class="home-section"></keupoetry-home>
+        <keupoetry-donations class="donations-section"></keupoetry-donations>
+        <keupoetry-bookings class="bookings-section"></keupoetry-bookings>
+        <keupoetry-events class="events-section"></keupoetry-events>
+        <keupoetry-updates class="updates-section"></keupoetry-updates>
+        <keupoetry-about class="about-section"></keupoetry-about>
+    </div>
+</div>
+
+<!-- source: https://www.youtube.com/watch?v=yk57cgZLWRo -->

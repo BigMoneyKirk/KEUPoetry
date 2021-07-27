@@ -1,0 +1,62 @@
+$navbar-height: 118.667px;
+
+.home-section {
+    background: url('../../../assets/images/backgrounds/ai-petri-low-clouds.jpg');
+    background-size: cover;
+    padding-top: $navbar-height;
+    background-attachment: fixed;
+}
+
+.logo-container {
+    height: 50px;
+    width: 50px;
+}
+
+.slogan-container {
+    background: white;
+    opacity: 0.5;
+    max-width: 700px; //900px
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.01);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 40px;
+    padding-left: 90px;
+    font-family: controlFont;
+}
+
+@media (max-width: 1200px) {
+    
+}
+
+@media (max-width: 772px) {
+    
+}
+
+.slogan-flex-container {
+    display: flex;
+    width: 100%;
+    //justify-content: center;
+    align-items: center;
+    height: 100vh;
+    // transform: translateY(-$navbar-height);
+    flex-direction: column;
+}
+
+
+.logo-container {
+    position: relative;
+    display: flex;
+    margin-bottom: 100px;
+    width: 500px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    flex-direction: column;
+}
+
+.watermark-logo {
+    height: 70px;
+}
