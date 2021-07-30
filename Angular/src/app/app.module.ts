@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,6 +15,8 @@ import { BookingsComponent } from './tabs/bookings/bookings.component';
 import { EventsComponent } from './tabs/events/events.component';
 import { UpdatesComponent } from './tabs/updates/updates.component';
 import { AboutComponent } from './tabs/about/about.component'; // a plugin!
+import { SloganService } from './services/slogan.service';
+import { BookingService } from './services/booking.service';
 
 FullCalendarModule.registerPlugins([ // register FullCalendar plugins
   dayGridPlugin,
@@ -35,9 +38,13 @@ FullCalendarModule.registerPlugins([ // register FullCalendar plugins
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FullCalendarModule // register FullCalendar with you app
+    FullCalendarModule, // register FullCalendar with you app
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+    SloganService,
+    BookingService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

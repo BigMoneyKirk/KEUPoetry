@@ -1,5 +1,8 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Slogan } from '../classes/slogan';
+import { Observable } from 'rxjs';
+import { environment } from 'src/environments/environment';
+import { Slogan } from '../models/slogan';
 
 @Injectable({
   providedIn: 'root'
@@ -8,9 +11,15 @@ export class SloganService {
 
   allSlogans: Slogan[] = [];
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
 
-  getAllSlogans() {
+  url: string = environment.url;
+
+  public GetAllSlogans() : Observable<Slogan> {
+    return this.http.get<Slogan>(`{this.url}/api/slogan/all`);
+  }
+
+  getAllSlogans2() {
     let s: Slogan = new Slogan();
     s.text = "The grass may be greener on the other side, but the water bill is definitely higher.";
     s.author = "Akeem Roberts";
