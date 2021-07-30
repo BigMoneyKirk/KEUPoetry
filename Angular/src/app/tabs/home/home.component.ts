@@ -5,7 +5,8 @@ import { SloganService } from 'src/app/services/slogan.service';
 @Component({
   selector: 'keupoetry-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  styleUrls: ['./home.component.scss'],
+  providers: [ SloganService ]
 })
 export class HomeComponent implements OnInit {
 
