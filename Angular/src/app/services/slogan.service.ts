@@ -15,8 +15,9 @@ export class SloganService {
 
   url: string = environment.url;
 
-  public GetAllSlogans() : Observable<Slogan> {
-    return this.http.get<Slogan>(`{this.url}/api/slogan/all`);
+  public GetAllSlogans(): Observable<Slogan[]> {
+    let check = `${this.url}/api/Slogans/all`;
+    return this.http.get<Slogan[]>(check);
   }
 
   getAllSlogans2() {

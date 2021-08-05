@@ -1,4 +1,5 @@
 ﻿using KEUPoetry_API;
+using KEUPoetry_DAL.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -39,10 +40,20 @@ namespace KEUPoetry_DAL.Infrastructure
             }
         }
 
+        //public virtual void GetAll()
+        //{
+        //    this.dbContext.Entry<Slogan>.OrderBy();
+        //}
+
         public virtual void Update(TEntity entity)
         {
             this.dbContext.SetModified(entity);
             this.dbContext.SaveChanges();
+        }
+
+        public virtual void Find(int id)
+        {
+
         }
     }
 }

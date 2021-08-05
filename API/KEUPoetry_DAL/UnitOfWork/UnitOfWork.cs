@@ -26,6 +26,9 @@ namespace KEUPoetry_DAL.UnitOfWork
         private SloganRepository sloganRepository;
 
         // methods
-
+        public SloganRepository SloganRepository()
+        {
+            return this.sloganRepository = new SloganRepository();
+        }
     }
 }

@@ -52,6 +52,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Infrastructure\BaseModel.cs" />
+    <Compile Include="Interfaces\IBaseRepository.cs" />
     <Compile Include="Interfaces\ISloganRepository.cs" />
     <Compile Include="Interfaces\Services\ISloganService.cs" />
     <Compile Include="KEUPoetryContext.cs" />

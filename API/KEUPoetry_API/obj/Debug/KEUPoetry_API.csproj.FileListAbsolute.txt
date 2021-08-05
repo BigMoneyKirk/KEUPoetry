@@ -68,8 +68,6 @@ C:\Users\sk014\Desktop\Self Teaching\Angular5\KEUPoetry\API\KEUPoetry_API\obj\De
 C:\Users\sk014\Desktop\Self Teaching\Angular5\KEUPoetry\API\KEUPoetry_API\obj\Debug\KEUPoetry_API.csproj.CopyComplete
 C:\Users\sk014\Desktop\Self Teaching\Angular5\KEUPoetry\API\KEUPoetry_API\obj\Debug\KEUPoetry_API.dll
 C:\Users\sk014\Desktop\Self Teaching\Angular5\KEUPoetry\API\KEUPoetry_API\obj\Debug\KEUPoetry_API.pdb
-C:\Users\sk014\Desktop\Self Teaching\Angular5\KEUPoetry\API\KEUPoetry_API\obj\Debug\KEUPoetry_API.Migrations.FirstMigration.resources
-C:\Users\sk014\Desktop\Self Teaching\Angular5\KEUPoetry\API\KEUPoetry_API\obj\Debug\KEUPoetry_API.csproj.GenerateResource.cache
 D:\Kirkand Enterprises Unlimited\Website Code\KEUPoetry\API\KEUPoetry_API\obj\Debug\KEUPoetry_API.csproj.AssemblyReference.cache
 D:\Kirkand Enterprises Unlimited\Website Code\KEUPoetry\API\KEUPoetry_API\obj\Debug\KEUPoetry_API.csproj.CoreCompileInputs.cache
 D:\Kirkand Enterprises Unlimited\Website Code\KEUPoetry\API\KEUPoetry_API\bin\KEUPoetry_API.dll.config
@@ -143,3 +141,9 @@ D:\Kirkand Enterprises Unlimited\Website Code\KEUPoetry\API\KEUPoetry_API\bin\An
 D:\Kirkand Enterprises Unlimited\Website Code\KEUPoetry\API\KEUPoetry_API\obj\Debug\KEUPoetry_API.csproj.CopyComplete
 D:\Kirkand Enterprises Unlimited\Website Code\KEUPoetry\API\KEUPoetry_API\obj\Debug\KEUPoetry_API.dll
 D:\Kirkand Enterprises Unlimited\Website Code\KEUPoetry\API\KEUPoetry_API\obj\Debug\KEUPoetry_API.pdb
+C:\Users\sk014\Desktop\Self Teaching\Angular5\KEUPoetry\API\KEUPoetry_API\bin\KEUPoetry_DAL.dll
+C:\Users\sk014\Desktop\Self Teaching\Angular5\KEUPoetry\API\KEUPoetry_API\bin\KEUPoetry_DAL.pdb
+C:\Users\sk014\Desktop\Self Teaching\Angular5\KEUPoetry\API\KEUPoetry_API\bin\KEUPoetry_DAL.dll.config
+C:\Users\sk014\Desktop\Self Teaching\Angular5\KEUPoetry\API\KEUPoetry_API\bin\System.Web.Cors.dll
+C:\Users\sk014\Desktop\Self Teaching\Angular5\KEUPoetry\API\KEUPoetry_API\bin\System.Web.Http.Cors.dll
+C:\Users\sk014\Desktop\Self Teaching\Angular5\KEUPoetry\API\KEUPoetry_API\bin\System.Web.Http.Cors.xml

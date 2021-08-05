@@ -2,12 +2,15 @@
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using System.Web.Http.Cors;
+
 using KEUPoetry_DAL.Interfaces.Services;
 using KEUPoetry_DAL.Models;
 using KEUPoetry_DAL.Services;
 
 namespace KEUPoetry_API.Controllers
 {
+    [EnableCors(origins: "http://localhost:4200/home", headers: "*", methods: "*")]
     public class SlogansController : ApiController, BaseController
     {
         public ISloganService sloganService;
@@ -23,6 +26,7 @@ namespace KEUPoetry_API.Controllers
         }
 
         // GET: api/Slogans
+        [HttpGet]
         [Route("all")]
         public HttpResponseMessage GetAll()
         {
