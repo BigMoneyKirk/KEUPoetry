@@ -10,7 +10,7 @@ using KEUPoetry_DAL.Services;
 
 namespace KEUPoetry_API.Controllers
 {
-    [EnableCors(origins: "http://localhost:4200/home", headers: "*", methods: "*")]
+    [EnableCors(origins: "http://localhost:4200/", headers: "*", methods: "*")]
     public class SlogansController : ApiController, BaseController
     {
         public ISloganService sloganService;
@@ -27,11 +27,11 @@ namespace KEUPoetry_API.Controllers
 
         // GET: api/Slogans
         [HttpGet]
-        [Route("all")]
+        [Route("api/Slogans/all")]
         public HttpResponseMessage GetAll()
         {
             List<Slogan> entity = this.sloganService.GetAllSlogans();
-            return this.Request.CreateResponse(HttpStatusCode.OK, entity);
+            return this.Request.CreateResponse(HttpStatusCode.OK, new List<Slogan> { new Slogan { SloganID = 1, Author = "Testing Author", Title = "Title working." } });
         }
 
         /* ---------------------------------------------- Everything below here is TO-DO ---------------------------------------------------- */

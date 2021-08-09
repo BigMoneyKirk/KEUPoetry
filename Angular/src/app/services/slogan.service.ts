@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { environment } from 'src/environments/environment';
@@ -16,8 +16,8 @@ export class SloganService {
   url: string = environment.url;
 
   public GetAllSlogans(): Observable<Slogan[]> {
-    let check = `${this.url}/api/Slogans/all`;
-    return this.http.get<Slogan[]>(check);
+    let check = `${this.url}api/Slogans/all`;
+    return this.http.get<Slogan[]>(check, { headers : this.GetHttpHeaders() });
   }
 
   getAllSlogans2() {
@@ -34,4 +34,9 @@ export class SloganService {
 
     return this.allSlogans;
   }
+
+  GetHttpHeaders() : HttpHeaders {
+    const headers = new HttpHeaders().set('Content-Type', 'application/json');
+    return headers;
+}
 }
