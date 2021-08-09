@@ -31,7 +31,7 @@ namespace KEUPoetry_API.Controllers
         public HttpResponseMessage GetAll()
         {
             List<Slogan> entity = this.sloganService.GetAllSlogans();
-            return this.Request.CreateResponse(HttpStatusCode.OK, new List<Slogan> { new Slogan { SloganID = 1, Author = "Testing Author", Title = "Title working." } });
+            return this.Request.CreateResponse(HttpStatusCode.OK, entity);
         }
 
         /* ---------------------------------------------- Everything below here is TO-DO ---------------------------------------------------- */

@@ -17,7 +17,7 @@ namespace KEUPoetry_DAL.Models
         [Key]
         public int SloganID { get; set; }
 
-        public string Title { get; set; }
+        public string Text { get; set; }
 
         public string Author { get; set; }
     }
