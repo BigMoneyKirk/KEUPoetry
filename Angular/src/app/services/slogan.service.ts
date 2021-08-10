@@ -13,58 +13,14 @@ export class SloganService {
 
   constructor(private http: HttpClient) { }
 
-  url: string = environment.url;
-
-  // public GetAllSlogans(): Observable<Slogan[]> {
-  //   let check = `${this.url}api/Slogans/all`;
-  //   return this.http.get<Slogan[]>(check, { headers : this.GetHttpHeaders() });
-  // }
+  apiUrl: string = environment.apiUrl;
 
   public GetAllSlogans() : Observable<Slogan[]>{
     return this.getURL('/api/Slogans/all');
   };
 
-  getAllSlogans2() {
-    let s: Slogan = new Slogan();
-    s.Text = "The grass may be greener on the other side, but the water bill is definitely higher.";
-    s.Author = "Akeem Roberts";
-    this.allSlogans.push(s);
-
-    let t: Slogan = new Slogan();
-    t.Text = "Stay focused.";
-    t.Author = "Eugene Kirkland, Sr."
-
-    this.allSlogans.push(t);
-
-    return this.allSlogans;
-  }
-
   // https://juristr.com/blog/2016/11/configure-proxy-api-angular-cli/
   getURL(myUrl: string) {
-    return this.http.get<Slogan[]>(`${myUrl}`, {
-      headers: {
-        'Content-Type': 'application/json',
-        'Access-Control-Allow-Origin': '*',
-        'Access-Control-Allow-Methods': '*',
-        'Access-Control-Allow-Headers': 'x-requested-with, Content-Type, origin, authorization, accept, client-security-token'
-      }
-    })
-    // return from(
-    //   fetch(
-    //     `${this.url}${myUrl}`, // the url you are trying to access
-    //     {
-    //       headers: {
-    //         'Content-Type': 'application/json',
-    //         'Access-Control-Allow-Origin': '*',
-    //         'Access-Control-Allow-Methods': '*',
-    //         'Access-Control-Allow-Headers': 'x-requested-with, Content-Type, origin, authorization, accept, client-security-token'
-    //       },
-    //       method: 'GET', // GET, POST, PUT, DELETE
-    //       mode: 'no-cors' // the most important option
-    //     }
-    //   ).then(response => {
-    //     console.log("in the fetch", response);
-    //     // return response;
-    //   }));
+    return this.http.get<Slogan[]>(`${this.apiUrl}${myUrl}`);
   }
 }
