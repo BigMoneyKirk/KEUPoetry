@@ -1,6 +1,6 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import { from, Observable } from 'rxjs';
 import { environment } from 'src/environments/environment';
 import { Slogan } from '../models/slogan';
 
@@ -15,28 +15,58 @@ export class SloganService {
 
   url: string = environment.url;
 
-  public GetAllSlogans(): Observable<Slogan[]> {
-    let check = `${this.url}api/Slogans/all`;
-    return this.http.get<Slogan[]>(check, { headers : this.GetHttpHeaders() });
-  }
+  // public GetAllSlogans(): Observable<Slogan[]> {
+  //   let check = `${this.url}api/Slogans/all`;
+  //   return this.http.get<Slogan[]>(check, { headers : this.GetHttpHeaders() });
+  // }
+
+  public GetAllSlogans() {
+    return this.getURL('/api/Slogans/all');
+  };
 
   getAllSlogans2() {
     let s: Slogan = new Slogan();
-    s.text = "The grass may be greener on the other side, but the water bill is definitely higher.";
-    s.author = "Akeem Roberts";
+    s.Text = "The grass may be greener on the other side, but the water bill is definitely higher.";
+    s.Author = "Akeem Roberts";
     this.allSlogans.push(s);
 
     let t: Slogan = new Slogan();
-    t.text = "Stay focused.";
-    t.author = "Eugene Kirkland, Sr."
+    t.Text = "Stay focused.";
+    t.Author = "Eugene Kirkland, Sr."
 
     this.allSlogans.push(t);
 
     return this.allSlogans;
   }
 
-  GetHttpHeaders() : HttpHeaders {
-    const headers = new HttpHeaders().set('Content-Type', 'application/json');
-    return headers;
-}
+  // https://stackoverflow.com/questions/47345282/how-to-add-cors-request-in-header-in-angular-5
+  getURL(myUrl: string) {
+    // return this.http.get<Array<Slogan>>(`${this.url}${myUrl}`, {
+    //   headers: {
+    //     'Content-Type': 'application/json',
+    //     'Access-Control-Allow-Origin': '*',
+    //     'Access-Control-Allow-Methods': '*',
+    //     'Access-Control-Allow-Headers': 'x-requested-with, Content-Type, origin, authorization, accept, client-security-token'
+    //   },
+    //   observe: 'response',
+    //   params: {responseType: 'arraybuffer'}
+    // })
+    return from(
+      fetch(
+        `${this.url}${myUrl}`, // the url you are trying to access
+        {
+          headers: {
+            'Content-Type': 'application/json',
+            'Access-Control-Allow-Origin': '*',
+            'Access-Control-Allow-Methods': '*',
+            'Access-Control-Allow-Headers': 'x-requested-with, Content-Type, origin, authorization, accept, client-security-token'
+          },
+          method: 'GET', // GET, POST, PUT, DELETE
+          mode: 'no-cors' // the most important option
+        }
+      ).then(response => {
+        console.log("in the fetch", response);
+        // return response;
+      }));
+  }
 }
