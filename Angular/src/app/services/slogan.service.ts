@@ -20,7 +20,7 @@ export class SloganService {
   //   return this.http.get<Slogan[]>(check, { headers : this.GetHttpHeaders() });
   // }
 
-  public GetAllSlogans() {
+  public GetAllSlogans() : Observable<Slogan[]>{
     return this.getURL('/api/Slogans/all');
   };
 
@@ -41,32 +41,30 @@ export class SloganService {
 
   // https://stackoverflow.com/questions/47345282/how-to-add-cors-request-in-header-in-angular-5
   getURL(myUrl: string) {
-    // return this.http.get<Array<Slogan>>(`${this.url}${myUrl}`, {
-    //   headers: {
-    //     'Content-Type': 'application/json',
-    //     'Access-Control-Allow-Origin': '*',
-    //     'Access-Control-Allow-Methods': '*',
-    //     'Access-Control-Allow-Headers': 'x-requested-with, Content-Type, origin, authorization, accept, client-security-token'
-    //   },
-    //   observe: 'response',
-    //   params: {responseType: 'arraybuffer'}
-    // })
-    return from(
-      fetch(
-        `${this.url}${myUrl}`, // the url you are trying to access
-        {
-          headers: {
-            'Content-Type': 'application/json',
-            'Access-Control-Allow-Origin': '*',
-            'Access-Control-Allow-Methods': '*',
-            'Access-Control-Allow-Headers': 'x-requested-with, Content-Type, origin, authorization, accept, client-security-token'
-          },
-          method: 'GET', // GET, POST, PUT, DELETE
-          mode: 'no-cors' // the most important option
-        }
-      ).then(response => {
-        console.log("in the fetch", response);
-        // return response;
-      }));
+    return this.http.get<Slogan[]>(`${myUrl}`, {
+      headers: {
+        'Content-Type': 'application/json',
+        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Methods': '*',
+        'Access-Control-Allow-Headers': 'x-requested-with, Content-Type, origin, authorization, accept, client-security-token'
+      }
+    })
+    // return from(
+    //   fetch(
+    //     `${this.url}${myUrl}`, // the url you are trying to access
+    //     {
+    //       headers: {
+    //         'Content-Type': 'application/json',
+    //         'Access-Control-Allow-Origin': '*',
+    //         'Access-Control-Allow-Methods': '*',
+    //         'Access-Control-Allow-Headers': 'x-requested-with, Content-Type, origin, authorization, accept, client-security-token'
+    //       },
+    //       method: 'GET', // GET, POST, PUT, DELETE
+    //       mode: 'no-cors' // the most important option
+    //     }
+    //   ).then(response => {
+    //     console.log("in the fetch", response);
+    //     // return response;
+    //   }));
   }
 }

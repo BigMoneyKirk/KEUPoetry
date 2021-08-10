@@ -24,7 +24,7 @@ export class HomeComponent implements OnInit {
 
   generateDailySlogan() {
     this.sloganSevice.GetAllSlogans().subscribe(data => {
-      // this.allSlogans = data;
+      this.allSlogans = data;
       console.log("huh", data);
       this.dailySlogan = this.allSlogans[Math.floor(Math.random() * this.allSlogans.length)];
     });

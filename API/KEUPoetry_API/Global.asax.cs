@@ -23,6 +23,8 @@ namespace KEUPoetry_API
         protected void Application_BeginRequest()
         {
             HttpContext.Current.Response.AddHeader("Access-Control-Allow-Origin", "*");
+            HttpContext.Current.Response.AddHeader("Access-Control-Allow-Methods", "*");
+            HttpContext.Current.Response.AddHeader("Access-Control-Allow-Headers", "x-requested-with, Content-Type, origin, authorization, accept, client-security-token");
         }
     }
 }
