@@ -9,8 +9,6 @@ import { Slogan } from '../models/slogan';
 })
 export class SloganService {
 
-  allSlogans: Slogan[] = [];
-
   constructor(private http: HttpClient) { }
 
   apiUrl: string = environment.apiUrl;
