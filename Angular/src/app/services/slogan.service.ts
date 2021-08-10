@@ -39,7 +39,7 @@ export class SloganService {
     return this.allSlogans;
   }
 
-  // https://stackoverflow.com/questions/47345282/how-to-add-cors-request-in-header-in-angular-5
+  // https://juristr.com/blog/2016/11/configure-proxy-api-angular-cli/
   getURL(myUrl: string) {
     return this.http.get<Slogan[]>(`${myUrl}`, {
       headers: {
