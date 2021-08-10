@@ -6,10 +6,11 @@ import { SloganService } from 'src/app/services/slogan.service';
   selector: 'keupoetry-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
-  providers: [ SloganService ]
+  providers: [SloganService]
 })
 export class HomeComponent implements OnInit {
 
+  allSlogans: Slogan[];
   dailySlogan: Slogan = new Slogan();
   logoHomeButton: string = '../../../assets/images/logos/KEU_Logo_FullColor_Secondary_resize.png';
   watermarkLogo: string = '../../../assets/images/logos/KEU_Logo_FullColor_Wordmark.png';
@@ -22,7 +23,9 @@ export class HomeComponent implements OnInit {
   }
 
   generateDailySlogan() {
-    let allSlogans = this.sloganSevice.getAllSlogans2();
-    this.dailySlogan = allSlogans[Math.floor(Math.random() * allSlogans.length)];
+    this.sloganSevice.GetAllSlogans().subscribe(data => {
+      this.allSlogans = data;
+      this.dailySlogan = this.allSlogans[Math.floor(Math.random() * this.allSlogans.length)];
+    });
   }
 }

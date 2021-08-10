@@ -1,6 +1,7 @@
 export class Slogan {
-    public text: string;
-    public author: string;
+    public SloganID: number;
+    public Text: string;
+    public Author: string;
 
     constructor(){}
 }

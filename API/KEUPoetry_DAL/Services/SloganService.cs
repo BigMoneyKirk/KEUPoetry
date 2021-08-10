@@ -1,5 +1,6 @@
 ﻿using KEUPoetry_DAL.Interfaces.Services;
 using KEUPoetry_DAL.Models;
+using KEUPoetry_DAL.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,9 +13,12 @@ namespace KEUPoetry_DAL.Services
     {
         public SloganService() { }
 
+        private SloganRepository sloganRepository = new SloganRepository();
+
         public List<Slogan> GetAllSlogans()
         {
-            return new List<Slogan>();
+            var test = this.sloganRepository.GetAll();
+            return test;
         }
     }
 }

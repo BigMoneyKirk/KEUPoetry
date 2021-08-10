@@ -39,7 +39,7 @@ FullCalendarModule.registerPlugins([ // register FullCalendar plugins
     BrowserModule,
     AppRoutingModule,
     FullCalendarModule, // register FullCalendar with you app
-    HttpClientModule
+    HttpClientModule // https://stackoverflow.com/questions/47393162/error-no-provider-for-t // https://stackoverflow.com/questions/47236963/no-provider-for-httpclient
   ],
   providers: [
     SloganService,
