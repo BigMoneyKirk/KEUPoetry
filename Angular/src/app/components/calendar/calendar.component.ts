@@ -36,9 +36,7 @@ export class CalendarComponent implements OnInit {
         let object = {
           title: booking.Title, date: booking.StartDate
         }
-        console.log("booking", booking);
-        console.log("object", object);
-        this.calendarComponent.getApi().addEvent(object);
+        this.calendarComponent.getApi().addEvent(object); // https://fullcalendar.io/docs/angular Calendar API section
       });
     })
   }
