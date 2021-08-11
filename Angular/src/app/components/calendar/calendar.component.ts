@@ -32,12 +32,8 @@ export class CalendarComponent implements OnInit {
   public getAllBookings() {
     return this.bookingService.GetAllBookings().subscribe(data => {
       this.allBookings = data;
-      this.allBookings.forEach(booking => {
-        let object = {
-          title: booking.Title, date: booking.StartDate
-        }
-        this.calendarComponent.getApi().addEvent(object); // https://fullcalendar.io/docs/angular Calendar API section
-      });
+      var events = this.allBookings.map(booking => ({ title: booking.Title, date: booking.StartDate }));
+      this.calendarComponent.getApi().addEventSource(events); // https://fullcalendar.io/docs/angular Calendar API section
     })
   }
 }
