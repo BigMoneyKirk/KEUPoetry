@@ -13,7 +13,7 @@ namespace KEUPoetry_DAL.Services
     {
         public SloganService() { }
 
-        private SloganRepository sloganRepository = new SloganRepository();
+        private IBaseRepository sloganRepository = new IBaseRepository();
 
         public List<Slogan> GetAllSlogans()
         {

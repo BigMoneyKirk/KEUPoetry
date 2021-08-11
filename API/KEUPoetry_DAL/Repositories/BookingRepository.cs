@@ -3,21 +3,20 @@ using KEUPoetry_DAL.Interfaces;
 using KEUPoetry_DAL.Models;
 using System;
 using System.Collections.Generic;
-using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace KEUPoetry_DAL.Repositories
 {
-    public class IBaseRepository : IBaseRepository<Slogan>
+    public class BookingRepository : IBaseRepository<Booking>
     {
         public KEUPoetryContext dbContext = new KEUPoetryContext();
 
-        public virtual List<Slogan> GetAll()
+        public virtual List<Booking> GetAll()
         {
-            List<Slogan> sloganList = this.dbContext.Slogans.OrderBy(slogan => slogan.SloganID).ToList();
-            return sloganList;
+            List<Booking> bookingList = this.dbContext.Bookings.OrderBy(booking => booking.BookingID).ToList();
+            return bookingList;
         }
     }
 }

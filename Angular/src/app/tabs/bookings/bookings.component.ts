@@ -12,6 +12,7 @@ export class BookingsComponent implements OnInit {
   bookingsLogo: string = '../../../assets/images/misc/Bookings2.png'; // https://maketext.io/
 
   ngOnInit(): void {
+    
   }
 
 }

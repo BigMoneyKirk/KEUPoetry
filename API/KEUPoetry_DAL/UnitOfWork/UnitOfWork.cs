@@ -23,12 +23,12 @@ namespace KEUPoetry_DAL.UnitOfWork
 
         // global variables
         private KEUPoetryContext dbContext;
-        private SloganRepository sloganRepository;
+        private IBaseRepository sloganRepository;
 
         // methods
-        public SloganRepository SloganRepository()
+        public IBaseRepository SloganRepository()
         {
-            return this.sloganRepository = new SloganRepository();
+            return this.sloganRepository = new IBaseRepository();
         }
     }
 }
