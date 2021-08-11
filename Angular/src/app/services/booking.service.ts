@@ -11,9 +11,9 @@ export class BookingService {
 
   constructor(private http: HttpClient) { }
 
-  url: string = environment.url;
+  apiUrl: string = environment.apiUrl;
 
-  public GetAllBookings() : Observable<Booking> {
-    return this.http.get<Booking>(`{this.url}/api/bookings/all`);
+  public GetAllBookings() : Observable<Booking[]> {
+    return this.http.get<Booking[]>(`${this.apiUrl}/api/Booking/all`);
   }
 }

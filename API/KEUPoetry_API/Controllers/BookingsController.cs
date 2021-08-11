@@ -1,3 +1,5 @@
+using KEUPoetry_DAL.Models;
+using KEUPoetry_DAL.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,12 +9,27 @@ using System.Web.Http;
 
 namespace KEUPoetry_API.Controllers
 {
+    [RoutePrefix("api/Booking")]
     public class BookingsController : ApiController
     {
-        // GET api/values
-        public IEnumerable<string> Get()
+        public BookingService bookingService;
+
+        public BookingsController()
         {
-            return new string[] { "value1", "value2" };
+            this.bookingService = new BookingService();
+        }
+
+        public BookingsController(BookingService bookingService)
+        {
+            this.bookingService = bookingService;
+        }
+
+        // GET api/values
+        [Route("all")]
+        public IHttpActionResult GetAll()
+        {
+            List<Booking> bookingList = this.bookingService.GetAllBookings();
+            return this.Ok(bookingList);
         }
 
         // GET api/values/5

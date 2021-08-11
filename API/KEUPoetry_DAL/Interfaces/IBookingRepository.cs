@@ -1,4 +1,4 @@
-﻿using KEUPoetry_DAL.Infrastructure;
+﻿using KEUPoetry_DAL.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 
 namespace KEUPoetry_DAL.Interfaces
 {
-    public interface IBaseRepository<TModel> where TModel : BaseModel
+    public interface IBookingRepository
     {
-        List<TModel> GetAll();
+        List<Booking> GetAll();
     }
 }

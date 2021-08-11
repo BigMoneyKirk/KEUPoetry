@@ -1,3 +1,3 @@
 export class Booking {
-    constructor(public title: string, public date: string) {}
+    constructor(public Title: string, public StartDate: string) {}
 }

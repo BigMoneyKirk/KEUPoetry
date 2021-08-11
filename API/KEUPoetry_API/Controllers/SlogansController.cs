@@ -11,6 +11,7 @@ using KEUPoetry_DAL.Services;
 namespace KEUPoetry_API.Controllers
 {
     [EnableCors(origins: "http://localhost:4200/, *", headers: "*", methods: "*")]
+    [RoutePrefix("api/Slogan")]
     public class SlogansController : ApiController
     {
         public ISloganService sloganService;
@@ -28,7 +29,7 @@ namespace KEUPoetry_API.Controllers
         // GET: api/Slogans
         [HttpGet]
         [EnableCors(origins: "*", headers: "*", methods: "*")]
-        [Route("api/Slogans/all")]
+        [Route("all")]
         public IHttpActionResult GetAll()
         {
             List<Slogan> entity = this.sloganService.GetAllSlogans();
