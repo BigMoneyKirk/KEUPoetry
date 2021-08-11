@@ -35,7 +35,7 @@ export class HomeComponent implements OnInit {
     this.dailySlogan = this.allSlogans[this.currentSloganNumber];
   }
 
-  public previousSlogan() : void {
+  public prevSlogan() : void {
     if (this.currentSloganNumber == 0) {
       this.currentSloganNumber = this.allSlogans.length;
     }
