@@ -3,10 +3,16 @@
     <img [src]="watermarkLogo" alt="KEU Watermark Logo" class="watermark-logo">
     <img [src]="pswLogo" alt="Poetry and Spoken Word Logo" class="pswLogo">
   </div>
-  <div class="">
-    <div class="slogan-container">
-      <h1>{{dailySlogan.Text}}</h1>
-      <h2>- {{dailySlogan.Author}}</h2>
+  <div class="slogan-container">
+    <h1>{{dailySlogan.Text}}</h1>
+    <h2>- {{dailySlogan.Author}}</h2>
+  </div>
+  <div class="next-prev-btn-container">
+    <div class="prev-btn-container">
+      <button class="prev-btn" (click)="previousSlogan()">Prev</button>
+    </div>
+    <div class="next-btn-container">
+      <button class="next-btn" (click)="nextSlogan()">Next</button>
     </div>
   </div>
 </div>
