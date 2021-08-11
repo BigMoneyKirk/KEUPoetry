@@ -32,7 +32,7 @@ export class CalendarComponent implements OnInit {
   public getAllBookings() {
     return this.bookingService.GetAllBookings().subscribe(data => {
       this.allBookings = data;
-      var events = this.allBookings.map(booking => ({ title: booking.Title, date: booking.StartDate }));
+      var events = this.allBookings.map(booking => ({ title: booking.Title, date: booking.StartDate })); // https://stackoverflow.com/questions/40348171/es6-map-an-array-of-objects-to-return-an-array-of-objects-with-new-keys/40348205#40348205
       this.calendarComponent.getApi().addEventSource(events); // https://fullcalendar.io/docs/angular Calendar API section
     })
   }
