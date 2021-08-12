@@ -11,14 +11,12 @@ export class SloganService {
 
   constructor(private http: HttpClient) { }
 
-  apiUrl: string = environment.apiUrl;
-
   public GetAllSlogans() : Observable<Slogan[]>{
     return this.getURL('/api/Slogan/all');
   };
 
   // https://juristr.com/blog/2016/11/configure-proxy-api-angular-cli/
   getURL(myUrl: string) {
-    return this.http.get<Slogan[]>(`${this.apiUrl}${myUrl}`);
+    return this.http.get<Slogan[]>(`${myUrl}`);
   }
 }
