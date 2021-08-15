@@ -1,0 +1,12 @@
+C:\Users\sk014\Desktop\Self Teaching\Angular5\KEUPoetry\API\KEUPoetry_DAL\bin\Release\KEUPoetry_DAL.dll.config
+C:\Users\sk014\Desktop\Self Teaching\Angular5\KEUPoetry\API\KEUPoetry_DAL\bin\Release\KEUPoetry_DAL.dll
+C:\Users\sk014\Desktop\Self Teaching\Angular5\KEUPoetry\API\KEUPoetry_DAL\bin\Release\KEUPoetry_DAL.pdb
+C:\Users\sk014\Desktop\Self Teaching\Angular5\KEUPoetry\API\KEUPoetry_DAL\bin\Release\EntityFramework.dll
+C:\Users\sk014\Desktop\Self Teaching\Angular5\KEUPoetry\API\KEUPoetry_DAL\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\sk014\Desktop\Self Teaching\Angular5\KEUPoetry\API\KEUPoetry_DAL\bin\Release\EntityFramework.xml
+C:\Users\sk014\Desktop\Self Teaching\Angular5\KEUPoetry\API\KEUPoetry_DAL\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\sk014\Desktop\Self Teaching\Angular5\KEUPoetry\API\KEUPoetry_DAL\obj\Release\KEUPoetry_DAL.csproj.AssemblyReference.cache
+C:\Users\sk014\Desktop\Self Teaching\Angular5\KEUPoetry\API\KEUPoetry_DAL\obj\Release\KEUPoetry_DAL.csproj.CoreCompileInputs.cache
+C:\Users\sk014\Desktop\Self Teaching\Angular5\KEUPoetry\API\KEUPoetry_DAL\obj\Release\KEUPoetry_DAL.csproj.CopyComplete
+C:\Users\sk014\Desktop\Self Teaching\Angular5\KEUPoetry\API\KEUPoetry_DAL\obj\Release\KEUPoetry_DAL.dll
+C:\Users\sk014\Desktop\Self Teaching\Angular5\KEUPoetry\API\KEUPoetry_DAL\obj\Release\KEUPoetry_DAL.pdb

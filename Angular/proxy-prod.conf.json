@@ -1,0 +1,6 @@
+{
+    "/api": {
+      "target": "http://keupoetry.somee.com",
+      "secure": false
+    }
+  }
