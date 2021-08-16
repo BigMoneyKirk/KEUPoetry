@@ -17,6 +17,7 @@ import { UpdatesComponent } from './tabs/updates/updates.component';
 import { AboutComponent } from './tabs/about/about.component'; // a plugin!
 import { SloganService } from './services/slogan.service';
 import { BookingService } from './services/booking.service';
+import { BookingModalComponent } from './modals/booking-modal/booking-modal.component';
 
 FullCalendarModule.registerPlugins([ // register FullCalendar plugins
   dayGridPlugin,
@@ -33,7 +34,8 @@ FullCalendarModule.registerPlugins([ // register FullCalendar plugins
     BookingsComponent,
     EventsComponent,
     UpdatesComponent,
-    AboutComponent
+    AboutComponent,
+    BookingModalComponent
   ],
   imports: [
     BrowserModule,

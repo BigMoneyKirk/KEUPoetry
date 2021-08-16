@@ -143,3 +143,17 @@ keu-calendar {
         0 0 30px #ff1f71,
         0 0 60px #ff1f71;
 }
+
+#popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    background: #fff;
+    width: 450px;
+    height: 50vh;
+    padding: 80px 50px 50px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+    transition: 0.5s;
+}
