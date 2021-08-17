@@ -3,8 +3,10 @@
         <img [src]="bookingsLogo" alt="Bookings Logo" class="bookingsLogo">
     </div>
     <div class="new-booking-container">
-        <div class="btn"> <div class="new-booking-btn">Schedule Booking</div> </div>
-        <keupoetry-booking-modal id="popup"></keupoetry-booking-modal>
+        <div class="btn" (click)="bookingService.popupToggle()">
+            <div class="new-booking-btn">Schedule Booking</div>
+        </div>
+        <keupoetry-booking-modal id="bookingsPopup"></keupoetry-booking-modal>
     </div>
     <div class="bookings-calendar-container">
         <keu-calendar></keu-calendar>

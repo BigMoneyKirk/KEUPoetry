@@ -47,6 +47,7 @@ keu-calendar {
     width: 255px;
     height: 50px;
     margin: 20px;
+    cursor: pointer;
 }
 
 .new-booking-container .btn .new-booking-btn {
@@ -144,9 +145,9 @@ keu-calendar {
         0 0 60px #ff1f71;
 }
 
-#popup {
+#bookingsPopup {
     position: fixed;
-    top: 50%;
+    top: -100%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1000;
@@ -156,4 +157,10 @@ keu-calendar {
     padding: 80px 50px 50px;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
     transition: 0.5s;
+    visibility: hidden;
+}
+
+#bookingsPopup.active {
+    visibility: visible;
+    top: 50%;
 }

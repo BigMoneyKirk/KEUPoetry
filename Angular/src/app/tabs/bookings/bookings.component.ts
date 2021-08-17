@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BookingService } from 'src/app/services/booking.service';
 
 @Component({
   selector: 'keupoetry-bookings',
@@ -7,12 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BookingsComponent implements OnInit {
 
-  constructor() { }
+  constructor(public bookingService: BookingService) { }
 
   bookingsLogo: string = '../../../assets/images/misc/Bookings2.png'; // https://maketext.io/
 
   ngOnInit(): void {
     
   }
-
 }

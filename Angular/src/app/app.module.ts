@@ -18,6 +18,11 @@ import { AboutComponent } from './tabs/about/about.component'; // a plugin!
 import { SloganService } from './services/slogan.service';
 import { BookingService } from './services/booking.service';
 import { BookingModalComponent } from './modals/booking-modal/booking-modal.component';
+import {
+  NgxMatDatetimePickerModule,
+  NgxMatNativeDateModule, 
+  NgxMatTimepickerModule 
+} from '@angular-material-components/datetime-picker';
 
 FullCalendarModule.registerPlugins([ // register FullCalendar plugins
   dayGridPlugin,
@@ -41,7 +46,10 @@ FullCalendarModule.registerPlugins([ // register FullCalendar plugins
     BrowserModule,
     AppRoutingModule,
     FullCalendarModule, // register FullCalendar with you app
-    HttpClientModule // https://stackoverflow.com/questions/47393162/error-no-provider-for-t // https://stackoverflow.com/questions/47236963/no-provider-for-httpclient
+    HttpClientModule, // https://stackoverflow.com/questions/47393162/error-no-provider-for-t // https://stackoverflow.com/questions/47236963/no-provider-for-httpclient
+    NgxMatDatetimePickerModule,
+    NgxMatNativeDateModule,
+    NgxMatTimepickerModule // https://h2qutc.github.io/angular-material-components/datetimepicker
   ],
   providers: [
     SloganService,

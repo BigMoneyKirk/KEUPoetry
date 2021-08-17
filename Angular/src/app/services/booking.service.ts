@@ -14,4 +14,9 @@ export class BookingService {
   public GetAllBookings() : Observable<Booking[]> {
     return this.http.get<Booking[]>(`/api/Booking/all`);
   }
+
+  public popupToggle() {
+    const popup = document.getElementById('bookingsPopup');
+    popup.classList.toggle('active');
+  }
 }

@@ -1,5 +1,16 @@
 <div class="content">
     <img class="logoPic" [src]="logoHomeButton" alt="Logo Home Button">
     <h2>Schedule a booking</h2>
-    <p>You know what it is!!</p>
+    <p>Please enter the information to schedule a booking with Kirkland Enterprises Unlimited's: Poetry and Spoken Word
+        LIVE Event.</p>
+    <div class="inbox-box-container">
+        <div class="inputBox">
+            <input type="text" placeholder="Title">
+        </div>
+        <div class="inputBox">
+            <input type="submit" value="Submit" class="btn">
+        </div>
+    </div>
 </div>
+
+<div class="close" (click)="bookingService.popupToggle()"><i class="fas fa-times"></i></div>

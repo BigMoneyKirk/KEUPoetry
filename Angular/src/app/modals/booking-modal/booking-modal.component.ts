@@ -1,8 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {
-  mdbRow, mdbCol, mdbInput, mdbBtn, mdbCard, mdbCardBody, mdbCardHeader, mdbCardTitle,
-  mdbSelect, mdbDatePicker, mdbTimePicker, mdbCardFooter, mdbAutocomplete
-} from "mdbvue";
+import { BookingService } from 'src/app/services/booking.service';
 
 @Component({
   selector: 'keupoetry-booking-modal',
@@ -13,7 +10,7 @@ export class BookingModalComponent implements OnInit {
 
   logoHomeButton: string = '../../../assets/images/logos/KEU_Logo_FullColor_Secondary_resize.png';
 
-  constructor() { }
+  constructor(public bookingService: BookingService) { }
 
   ngOnInit(): void {
   }
