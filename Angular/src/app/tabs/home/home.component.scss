@@ -94,3 +94,9 @@ $navbar-height: 118.667px;
 .watermark-logo {
     height: 70px;
 }
+
+@media (max-width: 400px) {
+    .pswLogo, .watermark-logo {
+        width: 70%;
+    }
+}

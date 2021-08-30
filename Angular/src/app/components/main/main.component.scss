@@ -8,6 +8,7 @@ html {
 .body {
     margin: 0;
     padding: 0;
+    width: 100%;
 }
 
 header {
@@ -148,4 +149,10 @@ nav ul li a:hover {
 .main-section-container {
     position: relative;
     width: 100%;
+}
+
+@media (max-width: 400px) {
+    header {
+        width: 70%;
+    }
 }

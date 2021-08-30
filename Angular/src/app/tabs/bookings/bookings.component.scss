@@ -143,3 +143,13 @@ keu-calendar {
         0 0 30px #ff1f71,
         0 0 60px #ff1f71;
 }
+
+@media (max-width: 400px) {
+    .bookings-calendar-container{
+        height: 60vh;
+    }
+    
+    .faded-calendar-background {
+        height: 110%;
+    }
+}
